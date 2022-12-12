@@ -2,11 +2,12 @@
     text-align: center;
     display: flex;
     justify-content: center;
-
 }
 
 .imageContainer {
     position: relative;
+    max-width: 1120px;
+    width: 100%;
 
     &::before {
         content: "";
@@ -20,7 +21,6 @@
     }
 
     &::after {
-
         content: "";
         width: 100px;
         position: absolute;
@@ -32,4 +32,53 @@
         z-index: 999 !important;
 
     }
+
+    div {
+        img {
+            width: 700px;
+            height: 350px;
+        }
+    }
 }
+
+@media(max-width: 768px) {
+
+    .imageContainer {
+        position: relative;
+        max-width: 1120px;
+        width: 100%;
+    
+        &::before {
+            content: "";
+            width: 100px;
+            position: absolute;
+            background: linear-gradient(to right, transparent, transparent);
+            height: 100%;
+        
+            left: 0;
+            z-index: 999 !important;
+        }
+    
+        &::after {
+            content: "";
+            width: 100px;
+            position: absolute;
+            background: linear-gradient(to right, transparent, transparent);
+            height: 100%;
+        
+            right: 0;
+            top: 0;
+            z-index: 999 !important;
+    
+        }
+    
+        div {
+            img {
+                width: 350px;
+                height: 175px;
+            }
+        }
+    }
+
+}
+

@@ -1,23 +1,41 @@
 .portfolioContainer {
-    text-align: center;
-    padding-bottom: 2.5rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
 
-    h1 {
-        margin-bottom: 10px;
-    }
-    p {
-        font-size: 16px;
-        color: #64748b;
-    }
+  h1 {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    color: #64748b;
+  }
 }
 
 .companiesContainer {
-    display: flex;
-    width: 1120px;
-    margin: 0 auto;
-    justify-content: center;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
-    img {
-        width: 180px;
+  img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolioContainer {
+    text-align: center;
+    padding-bottom: 0rem;
+    p {
+      font-size: 14px;
     }
+  }
+
+  .companiesContainer {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
 }

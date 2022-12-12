@@ -1,0 +1,19 @@
+.footerContainer {
+  padding: 2.5rem 0 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  color: #64748b;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 1rem 0;
+    font-size: 14px;
+  }
+}

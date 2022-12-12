@@ -1,18 +1,42 @@
 .mainContainer {
-    img {
-        width: 500px;
-        display: block;
-        margin: 0 auto;
+  img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
 
-        border-radius: 10px;
-    }
+    border-radius: 10px;
+  }
 }
 
 .paragraphContainer {
+  text-align: center;
+  padding: 2.5rem 0;
+
+  p {
+    color: #64748b;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  .paragraphContainer {
     text-align: center;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
 
     p {
-      color: #64748b;   
+      font-size: 14px;
+      color: #64748b;
+
+      & + p {
+        margin-top: 10px;
+      }
     }
+  }
 }
