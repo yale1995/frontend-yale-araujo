@@ -1,0 +1,35 @@
+.carouselContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imageContainer {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100px;
+        position: absolute;
+        background: linear-gradient(to right, #e5e7eb, transparent);
+        height: 100%;
+    
+        left: 0;
+        z-index: 999 !important;
+    }
+
+    &::after {
+
+        content: "";
+        width: 100px;
+        position: absolute;
+        background: linear-gradient(to right, transparent, #e5e7eb);
+        height: 100%;
+    
+        right: 0;
+        top: 0;
+        z-index: 999 !important;
+
+    }
+}
