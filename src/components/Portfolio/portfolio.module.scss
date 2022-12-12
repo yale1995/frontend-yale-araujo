@@ -1,6 +1,6 @@
 .portfolioContainer {
     text-align: center;
-    padding: 2.5rem;
+    padding-bottom: 2.5rem;
 
     h1 {
         margin-bottom: 10px;
@@ -8,5 +8,16 @@
     p {
         font-size: 16px;
         color: #64748b;
+    }
+}
+
+.companiesContainer {
+    display: flex;
+    width: 1120px;
+    margin: 0 auto;
+    justify-content: center;
+
+    img {
+        width: 180px;
     }
 }
