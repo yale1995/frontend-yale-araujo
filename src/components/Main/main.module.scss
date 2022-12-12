@@ -1,0 +1,20 @@
+.mainContainer {
+    width: 100vw;
+
+    img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+
+        border-radius: 10px;
+    }
+}
+
+.paragraphContainer {
+    text-align: center;
+    padding: 2.5rem 0;
+
+    p {
+      color: #64748b;   
+    }
+}
