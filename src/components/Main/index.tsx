@@ -7,7 +7,7 @@ export function Main() {
     <main className={styles.mainContainer}>
       <Image
         src="/yale.jpg"
-        alt="yale photo into morumbi stadium"
+        alt="yale's photo into morumbi stadium"
         width={500}
         height={500}
       />
