@@ -5,7 +5,13 @@ import {} from "react";
 export function Footer() {
   return (
     <footer className={styles.footerContainer}>
-      <a>do you wanna hire me?</a>
+      <a
+        target="_blank"
+        rel="noreferrer noopener"
+        href="http://linkedin.com/in/yalearaujo/"
+      >
+        do you wanna hire me?
+      </a>
       <a
         onClick={() =>
           window.alert(
